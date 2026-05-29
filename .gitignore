@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# System files
+.DS_Store
+
+# Environment variables
+.env
+
+# Node
+node_modules/
+geoton-web/node_modules/
+
+# React Router
+.react-router/
+build/
+geoton-web/build/

@@ -1,0 +1,38 @@
+# GeoTón Perú 2026 — Dependencias del proyecto
+#
+# Instalación:
+#   pip install -r requirements.txt
+#
+# Si usas conda, los paquetes geoespaciales se instalan mejor desde conda-forge:
+#   conda install -c conda-forge geopandas shapely mapclassify
+#   pip install -r requirements.txt   # para el resto
+
+# ---- Manipulación de datos ----
+pandas>=2.0
+polars>=1.0
+numpy>=1.24
+pyarrow>=14.0          # backend de Parquet
+
+# ---- Lectura de Excel ----
+openpyxl>=3.1          # MINEDU + Tambos (.xlsx)
+
+# ---- Machine Learning ----
+scikit-learn>=1.3      # BallTree (Haversine), KFold, métricas
+lightgbm>=4.0
+xgboost>=2.0
+pip install "xgboost<3.0"
+catboost>=1.2
+
+shap>=0.43             # interpretabilidad
+
+# ---- Visualización ----
+matplotlib>=3.7
+
+# ---- Geoespacial (Bloque C: mapa coroplético) ----
+geopandas>=0.14
+shapely>=2.0
+mapclassify>=2.5       # esquemas de clasificación para coropletas
+
+# ---- Notebooks ----
+jupyter>=1.0
+ipykernel>=6.0
